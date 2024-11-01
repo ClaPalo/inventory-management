@@ -14,6 +14,7 @@ const Navbar = () => {
     const toggleSidebar = () => {
         dispatch(setIsSidebarCollapsed(!isSidebarCollapsed))
     }
+
     return (
         <div className="flex justify-between items-center w-full mb-7">
             {/* Left side of navbar */}
