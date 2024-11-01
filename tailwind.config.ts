@@ -15,16 +15,16 @@ const baseColors = [
 
 // map each shade in light mode to the corresponding shade in dark mode
 const shadeMapping = {
-    "50": "900",
-    "100": "800",
-    "200": "700",
-    "300": "600",
-    "400": "500",
-    "500": "400",
-    "600": "300",
-    "700": "200",
-    "800": "100",
-    "900": "50",
+    50: "900",
+    100: "800",
+    200: "700",
+    300: "600",
+    400: "500",
+    500: "400",
+    600: "300",
+    700: "200",
+    800: "100",
+    900: "50",
 };
 
 const generateThemeObject = (colors: any, mapping: any, invert = false) => {
