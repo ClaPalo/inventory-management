@@ -15,8 +15,6 @@ const CardSalesSummary = () => {
     const { data, isLoading, isError } = useGetDashboardMetricsQuery()
     const salesData = data?.salesSummary || []
 
-    const [timeframe, setTimeframe] = useState('weekly')
-
     const totalValueSum =
         salesData.reduce((acc, curr) => acc + curr.totalValue, 0) || 0
 
@@ -76,17 +74,6 @@ const CardSalesSummary = () => {
                                     {averageChangePercentage.toFixed(2)}%
                                 </span>
                             </div>
-                            <select
-                                className="shadow-sm border border-gray-300 bg-white p-2 rounded"
-                                value={timeframe}
-                                onChange={(e) => {
-                                    setTimeframe(e.target.value)
-                                }}
-                            >
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="monthly">Monthly</option>
-                            </select>
                         </div>
                         {/* CHART */}
                         <ResponsiveContainer
@@ -111,12 +98,16 @@ const CardSalesSummary = () => {
                                     dataKey="date"
                                     tickFormatter={(value) => {
                                         const date = new Date(value)
-                                        return `${date.getMonth() + 1}/${date.getDate()}`
+                                        return `${
+                                            date.getMonth() + 1
+                                        }/${date.getDate()}`
                                     }}
                                 />
                                 <YAxis
                                     tickFormatter={(value) => {
-                                        return `$${(value / 1000000).toFixed(0)}m`
+                                        return `$${(value / 1000000).toFixed(
+                                            0
+                                        )}m`
                                     }}
                                     tick={{ fontSize: 12, dx: -1 }}
                                     tickLine={false}
