@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
-                protocol: 'https:',
+                protocol: 'https',
                 hostname:
                     's3-inventorymanagement-palos.s3.us-east-2.amazonaws.com',
                 port: '',
