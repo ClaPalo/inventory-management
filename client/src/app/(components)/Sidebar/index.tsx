@@ -78,7 +78,7 @@ const Sidebar = () => {
                 }`}
             >
                 <Image
-                    src="https://s3-inventorymanagement-palos.s3.us-east-2.amazonaws.com/logo.png"
+                    src="https://s3-inventorymanagement-cpalos2.s3.us-east-2.amazonaws.com/logo.png"
                     alt="logo"
                     width={27}
                     height={27}

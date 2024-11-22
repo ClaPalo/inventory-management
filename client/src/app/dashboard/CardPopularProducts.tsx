@@ -25,7 +25,7 @@ function CardPopularProducts() {
                             >
                                 <div className="flex items-center gap-3">
                                     <Image
-                                        src={`https://s3-inventorymanagement-palos.s3.us-east-2.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
+                                        src={`https://s3-inventorymanagement-cpalos2.s3.us-east-2.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
                                         alt={product.name}
                                         width={48}
                                         height={48}
