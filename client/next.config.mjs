@@ -5,7 +5,7 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname:
-                    's3-inventorymanagement-palos.s3.us-east-2.amazonaws.com',
+                    'https://s3-inventorymanagement-cpalos2.s3.us-east-2.amazonaws.com',
                 port: '',
                 pathname: '/**',
             },
