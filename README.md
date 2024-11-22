@@ -19,3 +19,5 @@ We are using:
 - S3: assets
 - Amplify: NextJS Application
 - API Gateway: API to access web server
+
+![Architecture diagram](arch.drawio.png)
